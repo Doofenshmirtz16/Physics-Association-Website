@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Dr. Arvind Sharma",
+    "specialization": "Quantum Mechanics",
+    "email": "asharma@university.edu",
+    "education": "PhD (Stanford)",
+    "research": "Quantum computing, entanglement",
+    "publications": "Nature Physics (2023), PRL (2021)",
+    "office": "Physics Building 201",
+    "phone": "+91-9876543210"
+  },
+  {
+    "name": "Prof. Bhavna Rao",
+    "specialization": "Astrophysics",
+    "email": "brao@university.edu",
+    "education": "PhD (Caltech)",
+    "research": "Black holes, dark matter",
+    "publications": "ApJ (2022), MNRAS (2020)",
+    "office": "Physics Building 305",
+    "phone": "+91-9876543211"
+  },
+  {
+    "name": "Dr. Rahul Mehta",
+    "specialization": "Condensed Matter Physics",
+    "email": "rmehta@university.edu",
+    "education": "PhD (MIT)",
+    "research": "Superconductivity, nanomaterials",
+    "publications": "Science (2023), Adv. Mater. (2021)",
+    "office": "Physics Building 102",
+    "phone": "+91-9876543212"
+  },
+  {
+    "name": "Dr. Kavita Nair",
+    "specialization": "Optoelectronics",
+    "email": "knair@university.edu",
+    "education": "PhD (ETH Zurich)",
+    "research": "Photonic devices, lasers",
+    "publications": "Nature Photonics (2022), Opt. Express (2020)",
+    "office": "Physics Building 410",
+    "phone": "+91-9876543213"
+  },
+  {
+    "name": "Prof. Vinay Patil",
+    "specialization": "Theoretical Nuclear Physics",
+    "email": "vpatil@university.edu",
+    "education": "PhD (Princeton)",
+    "research": "Nuclear fusion, particle physics",
+    "publications": "Phys. Rev. C (2023), Nucl. Phys. A (2021)",
+    "office": "Physics Building 207",
+    "phone": "+91-9876543214"
+  },
+  {
+    "name": "Dr. Sneha Kulkarni",
+    "specialization": "High Energy Physics",
+    "email": "skulkarni@university.edu",
+    "education": "PhD (CERN)",
+    "research": "Particle accelerators, Higgs boson",
+    "publications": "JHEP (2022), Phys. Rev. D (2020)",
+    "office": "Physics Building 312",
+    "phone": "+91-9876543215"
+  }
+]

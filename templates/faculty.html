@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faculty - Physics Department</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<script src="{{ url_for('static', filename='js/theme-toggle.js') }}"></script>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+        ☰
+      </button>
+      <div class="logo-wrapper">
+        <img src="{{ url_for('static', filename='images/iitr_logo.jpg') }}" alt="IIT Roorkee Logo" class="dept-logo" />
+      </div>
+      <h1>Physics Association</h1>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('load_page', page='about.html') }}">About</a></li>
+          <li><a href="{{ url_for('load_page', page='faculty.html') }}" class="active">Faculty</a></li>
+          <li><a href="{{ url_for('load_page', page='research.html') }}">Research</a></li>
+          <li><a href="{{ url_for('load_page', page='labs.html') }}">Labs</a></li>
+          <li><a href="{{ url_for('load_page', page='publications.html') }}">Publications</a></li>
+          <li><a href="{{ url_for('load_page', page='achievements.html') }}">Achievements</a></li>
+          <li><a href="{{ url_for('load_page', page='curriculum.html') }}">Curriculum</a></li>
+          <li><a href="{{ url_for('load_page', page='contact.html') }}">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="top-bar">
+        <input type="search" id="facultySearch" placeholder="Search Faculty..." />
+      </header>
+      <div class="header-image">
+        <img src="{{ url_for('static', filename='images/Header_watermark_iitr.jpg') }}" alt="IITR Banner" />
+      </div>
+      <section class="glass-section fade-in">
+        <h2>Our Faculty</h2>
+        <div id="faculty-list" class="card-container"></div>
+      </section>
+
+      <footer class="footer">
+        &copy; <span id="current-year"></span> Department of Physics. All rights reserved.
+        <script>
+           document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+      </footer>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/faculty.js') }}"></script>
+  </div>
+</body>
+</html>

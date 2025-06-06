@@ -1,0 +1,30 @@
+[
+  {
+    "image": "/static/images/quantum_lab.jpg",
+    "name": "Quantum Physics Laboratory",
+    "equipment": "Atomic clocks, Electron traps, Interferometers",
+    "description": "Dedicated to experimental quantum mechanics, atomic-scale measurements, and quantum computing prototypes. Outfitted with cryogenics, RF shielding, and vibration isolation systems.",
+    "incharge": "Dr. Arvind Sharma"
+  },
+  {
+    "image": "/static/images/optics_lab.jpg",
+    "name": "Optics and Photonics Lab",
+    "equipment": "Laser benches, Fiber optics kits, CCD sensors",
+    "description": "Hands-on experimental setups for lasers, optical fibers, interferometers, and light-matter interaction. Emphasis on holography, quantum optics, and optical instrumentation.",
+    "incharge": "Dr. Sneha Kulkarni"
+  },
+  {
+    "image": "/static/images/solid_state_lab.jpg",
+    "name": "Solid State Physics Lab",
+    "equipment": "X-ray diffraction, Cryostats, Magnetic field testers",
+    "description": "Specializes in the study of crystal structures, semiconductors, and nano-materials. Equipped with high-precision instrumentation for XRD, Hall effect, and resistivity measurements.",
+    "incharge": "Dr. Rahul Mehta"
+  },
+  {
+    "image": "/static/images/computational_lab.webp",
+    "name": "Computational Physics Lab",
+    "equipment": "Workstations, GPU clusters, Simulation software",
+    "description": "Focused on simulation, numerical methods, and data-driven physics modeling using Python, MATLAB, and C++ platforms.",
+    "incharge": "Prof. Bhavna Rao"
+  }
+]

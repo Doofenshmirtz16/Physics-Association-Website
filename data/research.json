@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Dark Matter Detection",
+    "lead": "Dr. Arvind Sharma",
+    "description": "Exploring theoretical and experimental approaches to identify dark matter."
+  },
+  {
+    "title": "Gravitational Wave Interferometry",
+    "lead": "Prof. Bhavna Rao",
+    "description": "Using advanced optics and sensors to detect gravitational waves."
+  },
+  {
+    "title": "Nanoelectronics and Quantum Dots",
+    "lead": "Dr. Rahul Mehta",
+    "description": "Developing nanoscale devices for quantum computing and sensors."
+  },
+  {
+    "title": "Photonic Crystals for Optical Computing",
+    "lead": "Dr. Kavita Nair",
+    "description": "Designing materials to control light for advanced computing systems."
+  },
+  {
+    "title": "Neutrino Oscillation Studies",
+    "lead": "Prof. Vinay Patil",
+    "description": "Understanding neutrino mass and behavior through experimental detection."
+  }
+]

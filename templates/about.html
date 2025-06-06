@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Physics Department</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<script src="{{ url_for('static', filename='js/theme-toggle.js') }}"></script>
+<script>
+  function revealOnScroll() {
+    const els = document.querySelectorAll(".fade-in");
+    els.forEach(el => {
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.9) {
+        el.classList.add("visible");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll);
+</script>
+
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+        ☰
+      </button>
+      <div class="logo-wrapper">
+        <img src="{{ url_for('static', filename='images/iitr_logo.jpg') }}" alt="IIT Roorkee Logo" class="dept-logo" />
+      </div>
+      <h1>Physics Association</h1>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('load_page', page='about.html') }}" class="active">About</a></li>
+          <li><a href="{{ url_for('load_page', page='faculty.html') }}">Faculty</a></li>
+          <li><a href="{{ url_for('load_page', page='research.html') }}">Research</a></li>
+          <li><a href="{{ url_for('load_page', page='labs.html') }}">Labs</a></li>
+          <li><a href="{{ url_for('load_page', page='publications.html') }}">Publications</a></li>
+          <li><a href="{{ url_for('load_page', page='achievements.html') }}">Achievements</a></li>
+          <li><a href="{{ url_for('load_page', page='curriculum.html') }}">Curriculum</a></li>
+          <li><a href="{{ url_for('load_page', page='contact.html') }}">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="header-image">
+        <img src="{{ url_for('static', filename='images/Header_watermark_iitr.jpg') }}" alt="IITR Banner" />
+      </div>
+      <section class="glass-section fade-in">
+        <div class="card split">
+          <div class="split-text">
+            <h2>Overview</h2>
+            <p>The Department of Physics was established in 1960 and has grown into a center of excellence for research and education in fundamental and applied physics.</p>
+          </div>
+          <div class="split-image">
+            <img src="{{ url_for('static', filename='images/overview_about.jpg') }}" alt="Department Old Building" />
+          </div>
+        </div>
+      </section>
+
+      <section class="glass-section fade-in">
+        <div class="card split split.reverse">
+          <div class="split-image">
+            <img src="{{ url_for('static', filename='images/physics_about.jpeg') }}" alt="Physics Department Entrance" />
+          </div>
+          <div class="split-text">
+            <h2>Our Vision</h2>
+            <p>To be a leading department in physics education and research, fostering innovation, curiosity, and scientific excellence.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="glass-section fade-in">
+        <div class="card split">
+          <div class="split-text">
+            <h2>Our Mission</h2>
+            <ul>
+              <li>Promote research in emerging areas of physics.</li>
+              <li>Equip students with strong theoretical and practical foundations.</li>
+              <li>Engage with national and international scientific communities.</li>
+            </ul>
+          </div>
+          <div class="split-image">
+            <img src="{{ url_for('static', filename='images/Our_mission.jpg') }}" alt="Department Old Building" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        &copy; <span id="current-year"></span> Department of Physics. All rights reserved.
+        <script>
+           document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
