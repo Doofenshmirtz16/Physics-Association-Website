@@ -67,12 +67,19 @@ https://physics-association.onrender.com
 ## Folder Structure
 
 PhysicsWebsite/
+
 │
+
 ├── app.py # Main Flask backend
+
 ├── requirements.txt # Python dependencies
+
 ├── credentials/ # Google Service Account JSON
+
 │ └── credentials.json
+
 ├── data/ # JSON & CSV sample data
+
 │ ├── faculty.json
 │ ├── research.json
 │ ├── labs.json
