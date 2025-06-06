@@ -81,5 +81,10 @@ def submit_message():
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)}), 500
 
+if os.environ.get('GOOGLE_CREDS_JSON'):
+    with open('temp_google_creds.json', 'w') as f:
+        f.write(os.environ['GOOGLE_CREDS_JSON'])
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'temp_google_creds.json'
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000)
