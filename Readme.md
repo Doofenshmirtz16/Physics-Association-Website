@@ -7,6 +7,7 @@ This is a modern and interactive website for the Department of Physics, designed
 The goal of this project is to present departmental data such as faculty profiles, research areas, labs, publications, student achievements, curriculum, and contact details — in a dynamic, visually clean, and responsive format.
 
 Both the frontend and backend work seamlessly together. The contact form is fully integrated with **Google Sheets API** to store submissions, providing a real-world backend integration.
+(Google Sheets can be used in the backend to store data for other html pages as well but just for demonstration, I have used JSON to store static data for other pages and Google Sheets for dynamic data.)
 
 ---
 
