@@ -583,7 +583,7 @@ h3 {
   border: none;
   padding: 10px 12px;
   border-radius: 8px;
-  z-index: 1001;
+  z-index: 1002;
   cursor: pointer;
   color: var(--text);
   box-shadow: var(--shadow-sm);
@@ -637,14 +637,6 @@ h3 {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 16px;
   }
 
   .sidebar nav ul {
