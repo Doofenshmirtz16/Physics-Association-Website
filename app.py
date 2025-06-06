@@ -10,13 +10,17 @@ from google.oauth2.service_account import Credentials
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 
+if os.environ.get('GOOGLE_CREDS_JSON'):
+    with open('temp_google_creds.json', 'w') as f:
+        f.write(os.environ['GOOGLE_CREDS_JSON'])
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'temp_google_creds.json'
+
 # Setup Google Sheets API
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
-SERVICE_ACCOUNT_FILE = 'credentials/credentials.json'
+SERVICE_ACCOUNT_FILE = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS", "credentials/credentials.json")
 
 credentials = Credentials.from_service_account_file(
     SERVICE_ACCOUNT_FILE, scopes=SCOPES)
-
 gc = gspread.authorize(credentials)
 
 # Open the sheet by ID
@@ -80,11 +84,6 @@ def submit_message():
         
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)}), 500
-
-if os.environ.get('GOOGLE_CREDS_JSON'):
-    with open('temp_google_creds.json', 'w') as f:
-        f.write(os.environ['GOOGLE_CREDS_JSON'])
-    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'temp_google_creds.json'
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=10000)
