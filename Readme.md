@@ -39,7 +39,7 @@ https://physics-association.onrender.com
 
 ### Innovation:
 
-✅ Have added the Hamburger button in the menu
+✅ Added the Hamburger button in the menu
 ✅ Added the feature of logging in (keeping the record) while someone submits the contact form which provides improved user experience.
 ✅ Website uses AJAX (Asynchronous JavaScript) to submit user messages without reloading the page 
 ✅ Conditional code handles local vs. deployed credentials (Render vs. localhost), about this more is given below
@@ -81,26 +81,47 @@ PhysicsWebsite/
 ├── data/ # JSON & CSV sample data
 
 │ ├── faculty.json
+
 │ ├── research.json
+
 │ ├── labs.json
-│ ├── contact_submissions.csv (given just for storing in database)
+
+│ ├── contact_submissions.csv (given just for storing in local database)
+
 │ ├── achievemnets.json
+
 │ ├── publications.json
+
 │ ├── announcements.json
+
 ├── static/ # CSS, JS, Images
+
 │ ├── css/
+
 │ ├── js/
+
 │ ├── images/
+
 ├── templates/ # HTML templates
+
 │ ├── index.html
+
 │ ├── faculty.html
+
 │ ├── research.html
+
 │ ├── publications.html
+
 │ ├── contact.html
+
 │ └── about.html
+
 │ └── achievements.html
+
 │ └── curriculum.html
+
 │ └── labs.html
+
 └── README.md
 
 ---
@@ -258,9 +279,18 @@ Open your browser at:
 
 #### Note: In the file app.py, there's a code to create a credentials file just above the part of setting up Google Sheets API. This part of code is just used for hosting on Render so that credentials are not pushed on github but rather just locally included while hosting the website.
 
+
 ## Credits
+
 Developed as part of Physics Association Web Application Project
+
 Physics Department Website
-Designed and implemented by Sumit Sharma
+
+Designed and implemented by:
+
+Sumit Sharma (Engineering Physics 2nd year)
+
+Enrollment No.: 23123042
+
 Technologies used: Flask, HTML, CSS, JS, Google Sheets API
 
