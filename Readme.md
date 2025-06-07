@@ -47,7 +47,8 @@ https://physics-association.onrender.com
 ✅ Contact Form with:
 - Client-side validation
 - Server-side validation
-- Data storage in Google Sheets  
+- Data storage in Google Sheets
+
 ✅ Dynamic Routing via Flask  
 ✅ API endpoints for future extensibility  
 ✅ Neomorphic / Glassmorphism UI  
